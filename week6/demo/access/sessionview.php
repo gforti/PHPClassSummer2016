@@ -7,15 +7,16 @@
     <body>
         <?php
             session_start();
-            
-    if ( isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true ) {
-        echo 'you are logged in';
-    } else {
-        echo 'you are not logged in';
-    }
+         ?>
+        
+        <?php if ( isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true ): ?>
+            you are logged in
+        <?php else: ?>       
+            you are not logged in
+        <?php endif; ?>
          
            
-            
+         <?php   
             /*
              if ( isset($_SESSION['hello']) ) {
              
