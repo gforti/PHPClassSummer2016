@@ -13,8 +13,21 @@
           /* $results = getAllTestData(); */
            
            $column = 'datatwo';
-           $search = 'test';
-          $results = searchTest($column, $search);
+           $searchWord = 'test';
+           $db = dbconnect();
+           
+            $stmt = $db->prepare("SELECT * FROM test WHERE $column LIKE :search");
+
+            $search = '%'.$searchWord.'%';
+            $binds = array(
+                ":search" => $search
+            );
+            $results = array();
+            if ($stmt->execute($binds) && $stmt->rowCount() > 0) {
+                $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+            }
+            
+          //$results = searchTest($column, $search);
             
         ?>
         
