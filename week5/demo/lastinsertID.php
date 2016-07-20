@@ -19,7 +19,7 @@
             
             if ( isPostRequest() ) {
                 
-                 $db = dbconnect();
+                $db = dbconnect();
                 $stmt = $db->prepare("INSERT INTO states SET state_name = :state_name, state_abbr = :state_abbr");
 
                 $binds = array(

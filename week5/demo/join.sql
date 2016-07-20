@@ -1,5 +1,5 @@
 
-USE phpclasswinter2016;
+USE phpclasssummer2016;
 
 CREATE TABLE IF NOT EXISTS states (
 	state_id INT UNSIGNED AUTO_INCREMENT NOT NULL PRIMARY KEY,
