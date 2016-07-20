@@ -6,9 +6,9 @@
  */  
 function getDatabase() {
     $config = array(
-        'DB_DNS' => 'mysql:host=localhost;port=3306;dbname=PHPClassWinter2016',
-        'DB_USER' => 'php',
-        'DB_PASSWORD' => 'winter16'
+        'DB_DNS' => 'mysql:host=localhost;port=3306;dbname=PHPClassSummer2016',
+        'DB_USER' => 'root',
+        'DB_PASSWORD' => ''
     );
 
     try {
