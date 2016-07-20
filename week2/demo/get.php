@@ -36,5 +36,6 @@
             
             
         ?>
+        <h1>Your ID is <em><?php echo $id; ?></em></h1>
     </body>
 </html>

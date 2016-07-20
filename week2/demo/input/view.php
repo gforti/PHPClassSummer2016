@@ -44,6 +44,7 @@
                     <th>Data Two</th>
                 </tr>
             </thead>
+            <tbody>
             <?php
             /*
              * Use a for each loop to go through the
@@ -66,6 +67,7 @@
                     <td><?php echo $row['datatwo']; ?></td>            
                 </tr>
             <?php endforeach; ?>
+            </tbody>
         </table>
 
     </body>
