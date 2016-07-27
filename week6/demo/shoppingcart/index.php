@@ -15,11 +15,11 @@
             $cartID = filter_input(INPUT_POST, 'id');
             $catID = filter_input(INPUT_GET, 'cat');
             
-            if ( $action == 'Buy' ) {
+            if ( $action === 'Buy' ) {
                 addToCart($cartID);
             }
             
-            if ( $action == 'Empty cart' ) {
+            if ( $action === 'Empty cart' ) {
                 emptyCart();
             }               
             
